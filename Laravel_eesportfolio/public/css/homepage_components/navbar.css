@@ -1,0 +1,298 @@
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
+
+ {
+
+	color:white;  /*Sets the text hover color on navbar*/
+}
+
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
+
+ a:hover, .navbar-default .navbar-nav > .active > a:focus {
+
+color: white; /*BACKGROUND color for active*/
+
+background: inherit;
+
+ border-bottom:1px solid #a39c87;
+
+
+}
+
+
+
+  .navbar-default {
+
+    background-color: black;
+
+    border-color: #a39c87;
+
+    padding-top:20px; 
+
+    border:solid #a39c87;
+
+    padding-bottom: 0px;
+    
+
+
+}
+
+
+
+  .dropdown-menu > li > a:hover,
+
+   .dropdown-menu > li > a:focus {
+
+    color: #262626;
+
+   text-decoration: none;
+
+  background-color: #a39c87;  /*change color of links in drop down here*/
+
+   }
+
+
+
+ .nav > li > a:hover,
+
+ .nav > li > a:focus {
+
+    text-decoration: none;
+
+    background-color: #3f3d3c; /*Change rollover cell color here*/
+
+  }
+
+
+
+
+
+  .navbar-default .navbar-nav > li > a {
+
+   color: #a39c87; /*Change active text color here*/
+
+   font-family: lobster Two;
+
+    }
+
+
+
+#brand
+
+{
+
+	width:160px;
+
+	height:80px;
+
+
+
+}
+
+#menuItems
+
+{
+
+	margin-left: 40px;
+
+}
+
+
+
+nav ul li:first-child { float: left; }
+
+
+
+nav ul li { 
+
+  list-style:none;
+
+  margin-left:5px;
+
+  float: right; 
+
+}
+
+.navbar-brand
+
+{
+
+	margin-right: 60px;
+
+}
+
+
+
+.full {
+
+    width: 100%;	
+
+}
+
+.gap {
+
+	height: 30px;
+
+	width: 100%;
+
+	clear: both;
+
+	display: block;
+
+}
+
+
+.supportLi h4 {
+
+	font-size: 20px;
+
+	font-weight: lighter;
+
+	line-height: normal;
+
+	margin-bottom: 0 !important;
+
+	padding-bottom: 0;
+
+	font-family: sans-serif;
+
+}
+
+.newsletter-box input#appendedInputButton {
+
+	background: #FFFFFF;
+
+	display: inline-block;
+
+	float: left;
+
+	height: 30px;
+
+	clear: both;
+
+	width: 100%;
+
+}
+
+.newsletter-box .btn {
+
+	border: medium none;
+
+	-webkit-border-radius: 3px;
+
+	-moz-border-radius: 3px;
+
+	-o-border-radius: 3px;
+
+	-ms-border-radius: 3px;
+
+	border-radius: 3px;
+
+	display: inline-block;
+
+	height: 40px;
+
+	padding: 0;
+
+	width: 100%;
+
+	color: #fff;
+
+}
+
+.newsletter-box {
+
+	overflow: hidden;
+
+}
+
+.bg-gray {
+
+	background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
+
+	box-shadow: 0 1px 0 #B4B3B3;
+
+}
+
+.social li {
+
+	background: none repeat scroll 0 0 black;
+
+	border: 2px solid #B5B5B5;
+
+	-webkit-border-radius: 50%;
+
+	-moz-border-radius: 50%;
+
+	-o-border-radius: 50%;
+
+	-ms-border-radius: 50%;
+
+	border-radius: 50%;
+
+	float: left;
+
+	height: 36px;
+
+	line-height: 36px;
+
+	margin: 0 8px 0 0;
+
+	padding: 0;
+
+	text-align: center;
+
+	width: 36px;
+
+	transition: all 0.5s ease 0s;
+
+	-moz-transition: all 0.5s ease 0s;
+
+	-webkit-transition: all 0.5s ease 0s;
+
+	-ms-transition: all 0.5s ease 0s;
+
+	-o-transition: all 0.5s ease 0s;
+
+	margin-bottom: 10px;
+
+}
+
+.social li:hover {
+
+	transform: scale(1.15) rotate(360deg);
+
+	-webkit-transform: scale(1.1) rotate(360deg);
+
+	-moz-transform: scale(1.1) rotate(360deg);
+
+	-ms-transform: scale(1.1) rotate(360deg);
+
+	-o-transform: scale(1.1) rotate(360deg);
+
+}
+
+.social li a {
+
+	color: #EDEFF1;
+
+}
+
+.social li:hover {
+
+	border: 2px solid #a39c87;
+
+	background: #2c3e50;
+
+}
+
+.social li a i {
+
+	font-size: 16px;
+
+	margin: 0 0 0 5px;
+
+	color:  #a39c87 !important;
+
+}

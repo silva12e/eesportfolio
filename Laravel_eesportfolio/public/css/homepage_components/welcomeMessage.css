@@ -1,0 +1,49 @@
+#welcome_main
+{
+	margin-bottom:10px;
+	margin-top:80px;
+}
+#welcome_message_border
+{
+	margin-top:58px;
+	background-color:rgba(14,12,12,0.71);
+	font-family:Lobster Two;
+	font-size:30px;
+	padding-top:0px;
+}
+#message_paragraph
+{
+	color:#a39c87;
+	margin-top:20px;
+}
+
+#form_border
+{
+	margin-top:20px;
+	background-color:rgba(14,12,12,0.71);
+	font-family:Lobster Two;
+	font-size:30px;
+}
+
+#form_quote
+{
+	color:#a39c87;
+}
+
+#form_name
+{
+	margin-bottom:3px;
+	padding-bottom:4px;
+	color:#a39c87;
+	background-color:rgba(14,12,12,0);
+	font-size:16px;
+}
+
+#form_email
+{
+	margin-bottom:3px;
+	padding-bottom:4px;
+	color:#a39c87;
+	background-color:rgba(14,12,12,0);
+	font-size:16px;
+}
