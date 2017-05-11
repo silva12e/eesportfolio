@@ -1,21 +1,38 @@
-
-
-<div class="container">
-    <div class="row" style="margin-bottom:10px;margin-top:80px;">
-        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-4 col-sm-6 col-sm-offset-3 hidden-xs" style="margin-top:58px;background-color:rgba(14,12,12,0.71);font-family:Lobster Two;font-size:30px;padding-top:0px;">
-            
-            <p class="text-center" style="color:#a39c87;margin-top:20px;padding:25px;">let&#39;s build something great  together</p>
-            
+<div class="container" id="welcome-main">
+    <div class="row">
+        <!--First Message Section-->
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-4 col-sm-6 col-sm-offset-3 hidden-xs" id="firstMessage">
+            <p  class="text-center" >Let&#39;s build something great together</p>
         </div>
-        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-4 col-sm-6 col-sm-offset-3" style="margin-top:50px;background-color:rgba(14,12,12,0.71);font-family:Lobster Two;font-size:30px;">
-            <h3 class="text-center" style="color:#a39c87; padding:15px;">Contact me today for a free quote</h3>
-            <form><span class="label label-default" style="margin-bottom:3px;padding-bottom:4px;color:#a39c87;background-color:rgba(14,12,12,0);font-size:16px;">Name: </span>
-                <input type="text" name="name" required placeholder="Please, Enter your name" autocomplete="on"
-                class="form-control input-sm" /><span class="label label-default" style="margin-bottom:3px;padding-bottom:4px;color:#a39c87;background-color:rgba(14,12,12,0);font-size:16px;">E-mail: </span>
-                <input type="text" name="email" required placeholder="Please, Enter your E-mail address"
-                inputmode="email" class="form-control input-sm" style="margin-bottom:10px;" />
-            </form>
-            <button class="btn btn-success" type="submit" style="font-family:Lobster Two;margin-bottom:10px;">Submit </button>
+        <!--Form Section-->  
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-4 col-sm-6 
+        col-sm-offset-3" id="quotesContactForm">   
+        <p  id="quote_form_header" class="text-center" >Contact me today for a free quote</p>     
+            @if(Session::has('success'))
+              <div class="alert alert-success">
+                {{ Session::get('success') }}
+              </div>
+            @endif
+            {!! Form::open(['route'=>'contactMe.store']) !!}
+           <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
+              {!! Form::label('Name:') !!}
+              {!! Form::text('name', old('name'), ['class'=>'form-control', 'placeholder'=>'Enter Name']) !!}
+                <span class="text-danger">{{ $errors->first('name') }}</span>
+           </div>
+           <div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
+              {!! Form::label('Email:') !!}
+              {!! Form::text('email', old('email'), ['class'=>'form-control', 'placeholder'=>'Enter Email']) !!}
+              <span class="text-danger">{{ $errors->first('email') }}</span>
+           </div>     
+           <div class="form-group {{ $errors->has('message') ? 'has-error' : '' }}">
+             {!! Form::label('Comments:') !!}
+             {!! Form::textarea('comments', old('comments'), ['class'=>'form-control', 'placeholder'=>'Enter Message']) !!}
+             <span class="text-danger">{{ $errors->first('comments') }}</span>
+            </div>
+            <div class="form-group">
+             <button class="btn btn-success">Submit</button>
+            </div>
+         {{ Form::close() }}
         </div>
     </div>
 </div>

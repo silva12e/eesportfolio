@@ -1,5 +1,107 @@
-#projects_container
+.projects-clean 
 {
-  margin-top: 170px;
-  padding-bottom: 210px;
+  margin-top: 150px;
+  background:#45433d;
+  font-family: 'Bitter', serif;
+  border:solid;
+  border-radius: 15px;
+  padding:15px;
+}
+
+.projects-clean p 
+{
+  color:#7d8285;
+}
+
+.projects-clean h2 
+{
+  font-weight:bold;
+  margin-bottom:40px;
+  padding-top:40px;
+  color:inherit;
+  font-size: 27px;
+  font-family: lobster Two;
+}
+
+@media (max-width:767px)
+ {
+  .projects-clean h2
+  {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+.projects-clean .intro 
+{
+  font-size:14px;
+  max-width:500px;
+  margin:0 auto;
+  margin-bottom: 60px;
+}
+
+.projects-clean .intro p
+ {
+  margin-bottom:20;
+  color:white;
+}
+
+.projects-clean .projects 
+{
+  padding-bottom:20px;
+  padding-right: 20px;
+}
+
+.projects-clean .item
+ {
+  text-align:center;
+  padding-top:20px;
+  min-height:425px;
+}
+
+.projects-clean .item .name 
+{
+  font-weight:bold;
+  margin-top:20px;
+  margin-bottom:10px;
+  color:inherit;
+  font-size: 20px;
+}
+
+.projects-clean .item .description 
+{
+  font-size:14px;
+  margin-top:20px;
+  margin-bottom:10;
+  padding-right: 40px;
+  color: white;
+}
+
+#nextstep
+{
+  width:100px;
+  height:100px;
+
+}
+
+
+#islanders
+{
+  width:100px;
+  height:100px;
+
+}
+
+#okstaff
+{
+  width:300px;
+  height:100px;
+
+}
+.projectImg
+{
+  padding:20px;
+  padding-left: 50px;
+  
 }

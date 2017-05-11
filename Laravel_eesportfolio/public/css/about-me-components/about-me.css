@@ -2,7 +2,11 @@
     position: relative;
     float: left;
 }
-
+#aboutMeContainer
+{
+  border:solid;
+  border-radius: 15px;
+}
 .item h2 {
     text-align:center;
     position: absolute;
@@ -215,12 +219,3 @@ svg {
     stroke-dashoffset: 40;
   }
 }
-
-
-
-
-
-
-
-
-

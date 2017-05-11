@@ -3,8 +3,8 @@
 
 
 
-<div class="container" style="  background-color:#a39c87;
-  margin-top:120px;
+<div id="aboutMeContainer" class="container" style="  background-color:#a39c87;
+  margin-top:150px;
   margin-left:0px;
 ">
     <div class="jumbotron" style="  margin-top:20px;
